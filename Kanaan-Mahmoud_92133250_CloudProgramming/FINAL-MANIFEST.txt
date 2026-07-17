@@ -1,0 +1,84 @@
+FINAL MANIFEST
+==============
+
+Portfolio: Secure and Globally Distributed Static Website on AWS Using Terraform
+Student: Mahmoud Kanaan
+Matriculation number: 92133250
+Course code: DLBSEPCP01_E
+Manifest date: 2026-07-18
+
+Verification summary
+--------------------
+- Required four-phase directory structure: PRESENT
+- Genuine implementation screenshots: 16 in Development Phase and 16 in Final Evidence
+- Part 1 concept: PRESENT
+- Part 2 presentation: PRESENT
+- Two-page abstract: PRESENT
+- Final-product PDF: PRESENT
+- Standalone installation manual: PRESENT
+- Final Terraform source and .terraform.lock.hcl: PRESENT
+- Assignment PDF and knowledge-base DOCX: EXCLUDED
+- Terraform state, plan, .terraform directory, credentials, keys, and .env files: EXCLUDED
+- Secret-pattern scan before packaging: PASS (no credential values found)
+
+File inventory (SHA-256)
+-----------------------
+01-Research-and-Development/references.txt | 1426 bytes | efe42bfd001db894f1c545a0673104a3d6727552f35943414fa4851bba49647a
+01-Research-and-Development/research-notes.pdf | 3221 bytes | 2f8ff2a58db3afce563a5eb6a8225babd453d7980c2f44b872dcef69185d0ed3
+01-Research-and-Development/source-list.pdf | 5393 bytes | 293670e357cb55bdefb1f41ac21a2b0b59931237bcf251c6f4360df42dcd9769
+02-Conception-Phase/architecture-diagram-source/architecture-diagram.mmd | 788 bytes | a446d751401aa1c847468ed4c33a63552bcb165d105a7bd07c0f0e6e0905ca2f
+02-Conception-Phase/architecture-diagram.png | 113190 bytes | e224567b7ffe71268700140bbf8478cd176aaae456ef612048a1a9a03ab3eddb
+02-Conception-Phase/P1-concept.pdf | 163933 bytes | c4bee160e4df231a0e4ad771904d418753b2d98e28b4800b35b818e6809c2052
+03-Development-Phase/first-code-draft/.gitignore | 140 bytes | 170fe96173aa568a61af12d25b4cbcd1db4c3fd8979d10fffe6175a406993cda
+03-Development-Phase/first-code-draft/.terraform.lock.hcl | 1507 bytes | 28391b36a4ff35b03c961ab9cac2ce497c9cc13b3cc172eb655006106a47362b
+03-Development-Phase/first-code-draft/architecture-diagram.png | 113190 bytes | e224567b7ffe71268700140bbf8478cd176aaae456ef612048a1a9a03ab3eddb
+03-Development-Phase/first-code-draft/main.tf | 4202 bytes | 94059b656322a64a0514d2dc6c902320abb4399d60cdc9b7af895ce685cce648
+03-Development-Phase/first-code-draft/outputs.tf | 782 bytes | 1d2c32df7b01adabe4156ec7f008f9888d535952539c0b3b3fac14095fdde2cd
+03-Development-Phase/first-code-draft/README.md | 6419 bytes | cf7f44fb2fd2b44eaa2a1f02de2a3f56f9d2866fcdda354f8cc9435cb21b29d1
+03-Development-Phase/first-code-draft/site/index.html | 6298 bytes | bc6d38a65e8813e89bdbb7765dbb3042e8f6bf128d4baecd5ff8badbb99a9b7e
+03-Development-Phase/first-code-draft/variables.tf | 508 bytes | cdf9ab88502499e8ef87f01350150d1d0bbd0a5661ce016056b9bc7635337ddb
+03-Development-Phase/implementation-screenshots/01-tool-versions.png | 55023 bytes | 26b040e40d00dd601d933ed45ee6d0cd38909691108064300e217b9ea427635f
+03-Development-Phase/implementation-screenshots/02-terraform-validate.png | 34364 bytes | d206824097438c9f14c801309d3197c796fc29b0fb8ce9529825d9138fc9808d
+03-Development-Phase/implementation-screenshots/03-terraform-plan-create.png | 69357 bytes | db06ef95689daa5f81c1caabde8844f35960da1f58d07d947d5a40651cf23931
+03-Development-Phase/implementation-screenshots/04-terraform-apply-complete.png | 78534 bytes | 78400c705322342573d730fe3aa9f067411eaef8d3e9622442d4884798728b9a
+03-Development-Phase/implementation-screenshots/05-live-cloudfront-website.png | 93579 bytes | f8dd4ad6490ad5239f2060d2dafd75450ae3defe83d2355586e399598c484adb
+03-Development-Phase/implementation-screenshots/06-cloudfront-deployed.png | 42488 bytes | ef63c9108b0e32906be7b2ed4724869f36e8222e371a459b755f1cdabdedad35
+03-Development-Phase/implementation-screenshots/07-s3-index-object.png | 55044 bytes | 10ab9d457517a52e84ada96ea157d194d2022e0db408e220b4cb6e016b3b9ce5
+03-Development-Phase/implementation-screenshots/08-s3-public-access-block.png | 41588 bytes | dfb67f28c5476dc7b099d2ec4f39e03edc8732ef17daa0b386736a3c79b8f401
+03-Development-Phase/implementation-screenshots/09-https-response.png | 94992 bytes | f7d6ca8e1af4e0ae394ae843f3679b0ba33ef1eef471f201526fafd6b7f495a3
+03-Development-Phase/implementation-screenshots/10-http-to-https-redirect.png | 69582 bytes | 346cfa1145336a0e6278e92afe6af60b6a17e6f1ff20358bf81b5ddd77873af9
+03-Development-Phase/implementation-screenshots/11-public-access-block-cli.png | 39967 bytes | 77078c957d273772d37dd4116105c9784950fba65631623b49c1c46e2a169ed4
+03-Development-Phase/implementation-screenshots/12-direct-s3-access-denied.png | 62251 bytes | cc960e33fa931a9b2aa1e05904fe4580b7bba6c0fb3839a71f61cfe7ce5924a4
+03-Development-Phase/implementation-screenshots/13-cloudfront-status.png | 24238 bytes | 062832a0741678c89ae95b0740e0bfcae04c092106874afa675954267f2022da
+03-Development-Phase/implementation-screenshots/14-cloudfront-cache-hit.png | 55090 bytes | a5fab91396340155a115f5b2c0ad2b7e8920cbbbd9adbd2432d92a705d7481f6
+03-Development-Phase/implementation-screenshots/15-terraform-no-changes.png | 60316 bytes | ab5c3adab24bd919176a479a8686392e235b79835028ccf1ed08a1067f6ea138
+03-Development-Phase/implementation-screenshots/16-repeatable-redeployment.png | 60003 bytes | 28da6493a28a255103b520815eeb7c4cf9209c22ad0c2377209b0909c1425bd4
+03-Development-Phase/P2-presentation.pdf | 632890 bytes | c4c0c5bc187d35c54315f675f52e0eef059cda9661a2d8250fd3aa063b21077e
+04-Final-Phase/abstract.pdf | 13032 bytes | 25f70f74c2d572d8ff1b5e64782e3573294e2d54bfb1bd53b10d95868422ac52
+04-Final-Phase/feedback-matrix.md | 1188 bytes | 10f550bb5264ad1cbbb25515caaece821eb6bf9fc0d410d77bc4aff3ae4cdb5f
+04-Final-Phase/final-evidence/01-tool-versions.png | 55023 bytes | 26b040e40d00dd601d933ed45ee6d0cd38909691108064300e217b9ea427635f
+04-Final-Phase/final-evidence/02-terraform-validate.png | 34364 bytes | d206824097438c9f14c801309d3197c796fc29b0fb8ce9529825d9138fc9808d
+04-Final-Phase/final-evidence/03-terraform-plan-create.png | 69357 bytes | db06ef95689daa5f81c1caabde8844f35960da1f58d07d947d5a40651cf23931
+04-Final-Phase/final-evidence/04-terraform-apply-complete.png | 78534 bytes | 78400c705322342573d730fe3aa9f067411eaef8d3e9622442d4884798728b9a
+04-Final-Phase/final-evidence/05-live-cloudfront-website.png | 93579 bytes | f8dd4ad6490ad5239f2060d2dafd75450ae3defe83d2355586e399598c484adb
+04-Final-Phase/final-evidence/06-cloudfront-deployed.png | 42488 bytes | ef63c9108b0e32906be7b2ed4724869f36e8222e371a459b755f1cdabdedad35
+04-Final-Phase/final-evidence/07-s3-index-object.png | 55044 bytes | 10ab9d457517a52e84ada96ea157d194d2022e0db408e220b4cb6e016b3b9ce5
+04-Final-Phase/final-evidence/08-s3-public-access-block.png | 41588 bytes | dfb67f28c5476dc7b099d2ec4f39e03edc8732ef17daa0b386736a3c79b8f401
+04-Final-Phase/final-evidence/09-https-response.png | 94992 bytes | f7d6ca8e1af4e0ae394ae843f3679b0ba33ef1eef471f201526fafd6b7f495a3
+04-Final-Phase/final-evidence/10-http-to-https-redirect.png | 69582 bytes | 346cfa1145336a0e6278e92afe6af60b6a17e6f1ff20358bf81b5ddd77873af9
+04-Final-Phase/final-evidence/11-public-access-block-cli.png | 39967 bytes | 77078c957d273772d37dd4116105c9784950fba65631623b49c1c46e2a169ed4
+04-Final-Phase/final-evidence/12-direct-s3-access-denied.png | 62251 bytes | cc960e33fa931a9b2aa1e05904fe4580b7bba6c0fb3839a71f61cfe7ce5924a4
+04-Final-Phase/final-evidence/13-cloudfront-status.png | 24238 bytes | 062832a0741678c89ae95b0740e0bfcae04c092106874afa675954267f2022da
+04-Final-Phase/final-evidence/14-cloudfront-cache-hit.png | 55090 bytes | a5fab91396340155a115f5b2c0ad2b7e8920cbbbd9adbd2432d92a705d7481f6
+04-Final-Phase/final-evidence/15-terraform-no-changes.png | 60316 bytes | ab5c3adab24bd919176a479a8686392e235b79835028ccf1ed08a1067f6ea138
+04-Final-Phase/final-evidence/16-repeatable-redeployment.png | 60003 bytes | 28da6493a28a255103b520815eeb7c4cf9209c22ad0c2377209b0909c1425bd4
+04-Final-Phase/final-product.pdf | 1542734 bytes | acde58b5328d5155e00bd583c3eaa76ef2c8ef475ac861346c47adbfdd9bb1ae
+04-Final-Phase/final-source-code/.gitignore | 127 bytes | 6e1e5a6a8783267f4d8b2dac0a1ca684a16a9af74b88051f7837ba9b7923b9e9
+04-Final-Phase/final-source-code/.terraform.lock.hcl | 1481 bytes | 852e45b9ab7266c175a0ffceca1cb3f7141efa79de650ea3753450bf9a767909
+04-Final-Phase/final-source-code/main.tf | 4034 bytes | dda2532a74e64fde24af99e9a0a0d3b3580a5ec192d4d198411747cbc0ba9baa
+04-Final-Phase/final-source-code/outputs.tf | 758 bytes | 98c10c1de5126ed478a7f5e9b5100957aa3756a275bb5d96a164848850819614
+04-Final-Phase/final-source-code/README.md | 6264 bytes | 53439069061260f4ce2160758f26c0d6a4a7b1eda22dbee89c29854557f84a29
+04-Final-Phase/final-source-code/site/index.html | 6170 bytes | bbd08c7a305920d252767f278f87100f4f56641951805b63d56f55bfae0d2780
+04-Final-Phase/final-source-code/variables.tf | 492 bytes | 480838dfec11ecf0363185834df92df4b0f15bb847af216cd1d663364d2278cd
+04-Final-Phase/installation-manual.pdf | 305633 bytes | ae279493599e88c0cc130d6dc960c4c0ee4f855f7bd60849cbcfa912b4e441d7
+04-Final-Phase/test-results.md | 6715 bytes | 4780952126bae4561c3af39970f76dbe4f3bc6b83b39ff30e1548b6d5a98aa89

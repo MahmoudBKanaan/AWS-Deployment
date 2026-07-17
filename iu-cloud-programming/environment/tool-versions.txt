@@ -4,10 +4,19 @@ Cloud Programming Project - Tool Versions
 AWS CLI: 2.36.1
 Terraform CLI: 1.15.8
 Terraform AWS Provider: 6.55.0
+Git: 2.45.1.windows.1
+Visual Studio Code: 1.125.1
+Microsoft Word: 16.0.5474.1000
+Microsoft PowerPoint: 16.0.4266.1001
+Microsoft Edge: 150.0.4078.65
+diagrams.net: Web access confirmed
+Windows ZIP support: Compress-Archive and Expand-Archive 1.0.1.0
 
 Notes
 -----
 - The AWS CLI installation is version 2 as required by the project knowledge base.
-- Terraform provider selection is recorded reproducibly in terraform/.terraform.lock.hcl.
+- Terraform provider selection is recorded reproducibly in .terraform.lock.hcl.
+- A modern browser, diagram editor, Microsoft Office applications, and Windows ZIP
+  creation and extraction support were confirmed as available.
 - This file intentionally excludes usernames, installation paths, AWS account identifiers,
   access keys, secret keys, session tokens, credentials, and machine-specific secrets.

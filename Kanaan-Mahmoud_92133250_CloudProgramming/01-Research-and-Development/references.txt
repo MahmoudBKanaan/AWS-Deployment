@@ -1,0 +1,22 @@
+Official documentation references (accessed 17 July 2026)
+
+1. Amazon Web Services. What is Amazon CloudFront?
+   https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html
+2. Amazon Web Services. Data protection in Amazon S3.
+   https://docs.aws.amazon.com/AmazonS3/latest/userguide/DataDurability.html
+3. Amazon Web Services. Restrict access to an Amazon S3 origin.
+   https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html
+4. Amazon Web Services. Blocking public access to Amazon S3 storage.
+   https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html
+5. Amazon Web Services. Controlling ownership of objects and disabling ACLs.
+   https://docs.aws.amazon.com/AmazonS3/latest/userguide/about-object-ownership.html
+6. HashiCorp. What is Terraform?
+   https://developer.hashicorp.com/terraform/intro
+7. HashiCorp. Terraform CLI workflow.
+   https://developer.hashicorp.com/terraform/cli/run
+8. HashiCorp. AWS provider documentation.
+   https://registry.terraform.io/providers/hashicorp/aws/latest/docs
+9. Amazon Web Services. Use managed cache policies.
+   https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-managed-cache-policies.html
+10. Amazon Web Services. AWS CLI configuration and credential files.
+    https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html

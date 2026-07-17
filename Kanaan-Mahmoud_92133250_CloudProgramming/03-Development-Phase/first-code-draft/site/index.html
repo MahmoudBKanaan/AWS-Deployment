@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A secure static website delivered globally from a private Amazon S3 bucket through Amazon CloudFront.">
+  <title>Secure and Globally Distributed Static Website on AWS Using Terraform</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --background: #0c0c0c;
+      --surface: #171717;
+      --surface-light: #222;
+      --gold: #dcca87;
+      --text: #f5f5f5;
+      --muted: #aaa;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header, main, footer { width: min(1120px, 90%); margin: auto; }
+    header { min-height: 78vh; display: grid; place-items: center; text-align: center; }
+    section { padding: 4.5rem 0; }
+    h1, h2, h3 { font-family: Georgia, 'Times New Roman', serif; color: var(--gold); }
+    h1 { max-width: 920px; margin: 0; font-size: clamp(2.5rem, 7vw, 5.5rem); line-height: 1.05; }
+    h2 { margin-top: 0; font-size: clamp(2rem, 4vw, 3.25rem); }
+    p { color: var(--muted); }
+
+    .eyebrow { color: var(--gold); text-transform: uppercase; letter-spacing: .18em; font-size: .8rem; }
+    .objective { max-width: 760px; margin: 2rem auto 0; font-size: 1.15rem; }
+    .deployment-status { display: inline-block; margin: 1.5rem auto 0; padding: .7rem 1rem; border: 1px solid var(--gold); color: var(--gold); font-weight: 700; letter-spacing: .04em; }
+    .panel { padding: clamp(1.5rem, 4vw, 3rem); border: 1px solid #333; background: var(--surface); }
+
+    .architecture { display: grid; justify-items: center; gap: .8rem; }
+    .node { width: min(680px, 100%); padding: 1.25rem; border: 1px solid var(--gold); background: var(--surface-light); text-align: center; }
+    .node small, .node strong, .node code { display: block; }
+    .node small { color: var(--muted); text-transform: uppercase; letter-spacing: .12em; }
+    .node strong { margin-top: .35rem; color: var(--gold); font-family: Georgia, 'Times New Roman', serif; font-size: 1.5rem; }
+    .node code { margin-top: .4rem; color: var(--text); }
+    .connector { display: grid; justify-items: center; color: var(--muted); }
+    .connector span:last-child { color: var(--gold); font-size: 1.5rem; }
+    .terraform { margin: 1.5rem 0 0; color: var(--text); text-align: center; }
+
+    .requirements { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; padding: 0; list-style: none; }
+    .requirements li { padding: 1.1rem; border-left: 3px solid var(--gold); background: var(--surface-light); }
+    .requirements li::before { content: '✓'; margin-right: .75rem; color: var(--gold); }
+
+    .scope { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+    .scope article { padding: 1.5rem; background: var(--surface-light); }
+    .scope ul { margin: 0; padding-left: 1.2rem; color: var(--muted); }
+    footer { padding: 2rem 0; border-top: 1px solid #333; color: var(--muted); text-align: center; }
+  </style>
+</head>
+<body>
+  <header id="home">
+    <div>
+      <p class="eyebrow">IU Cloud Programming Portfolio</p>
+      <h1>Secure and Globally Distributed Static Website on AWS Using Terraform</h1>
+      <p class="objective">Deploy one static HTML page from a private Amazon S3 bucket and distribute it globally through Amazon CloudFront.</p>
+      <p class="deployment-status" role="status">Deployment status: Repeatable Terraform update verified.</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="architecture" aria-labelledby="architecture-title">
+      <div class="panel">
+        <h2 id="architecture-title">AWS Architecture</h2>
+        <div class="architecture">
+          <div class="node"><small>Client</small><strong>Global User</strong></div>
+          <div class="connector"><span>HTTPS</span><span aria-hidden="true">↓</span></div>
+          <div class="node"><small>Global content delivery</small><strong>Amazon CloudFront</strong></div>
+          <div class="connector"><span>Signed request using Origin Access Control</span><span aria-hidden="true">↓</span></div>
+          <div class="node"><small>Private origin storage</small><strong>Private Amazon S3 Bucket</strong><code>index.html</code></div>
+        </div>
+        <p class="terraform"><strong>Terraform provisions the complete environment.</strong></p>
+      </div>
+    </section>
+
+    <section id="requirements" aria-labelledby="requirements-title">
+      <h2 id="requirements-title">Project Requirements</h2>
+      <ul class="requirements">
+        <li>High availability</li>
+        <li>Global low-latency delivery</li>
+        <li>Managed automatic scaling</li>
+        <li>HTTPS</li>
+        <li>Private origin storage</li>
+        <li>Reproducible Infrastructure as Code</li>
+        <li>Secure removal after assessment</li>
+      </ul>
+    </section>
+
+    <section id="scope" aria-labelledby="scope-title">
+      <h2 id="scope-title">Implementation Scope</h2>
+      <div class="scope">
+        <article>
+          <h3>Included</h3>
+          <ul>
+            <li>One private S3 bucket and one HTML object</li>
+            <li>S3 security, ownership, encryption, and versioning controls</li>
+            <li>One CloudFront distribution and Origin Access Control</li>
+            <li>One source-restricted S3 bucket policy</li>
+            <li>Terraform configuration files</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Excluded</h3>
+          <ul>
+            <li>Compute, containers, serverless functions, and backend code</li>
+            <li>APIs, databases, and load balancers</li>
+            <li>Route 53, custom domains, ACM certificates, and AWS WAF</li>
+            <li>CI/CD, React, and Node.js</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>Static frontend only · Private S3 origin · Global CloudFront delivery · Managed by Terraform</footer>
+</body>
+</html>
