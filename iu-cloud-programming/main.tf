@@ -14,8 +14,9 @@ provider "aws" {
 
   default_tags {
     tags = {
-      Project   = var.project_name
-      ManagedBy = "Terraform"
+      Project     = "IU Cloud Programming"
+      Environment = "Student"
+      ManagedBy   = "Terraform"
     }
   }
 }
@@ -32,7 +33,10 @@ locals {
 }
 
 resource "aws_s3_bucket" "site" {
-  bucket        = local.bucket_name
+  bucket = local.bucket_name
+
+  # Convenient for removing this temporary student project after assessment.
+  # Do not use force_destroy for important production data.
   force_destroy = true
 }
 
@@ -78,7 +82,7 @@ resource "aws_s3_object" "index" {
   etag   = filemd5("${path.module}/site/index.html")
 
   content_type  = "text/html; charset=utf-8"
-  cache_control = "no-cache, no-store, must-revalidate"
+  cache_control = "public, max-age=300"
 
   depends_on = [
     aws_s3_bucket_ownership_controls.site,

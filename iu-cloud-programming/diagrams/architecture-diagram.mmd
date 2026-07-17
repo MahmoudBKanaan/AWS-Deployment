@@ -1,0 +1,26 @@
+flowchart TB
+    subgraph client ["Client"]
+        globalUser["Global User"]
+    end
+
+    subgraph gateway ["Global Delivery"]
+        cloudFront["Amazon CloudFront"]
+        originAccessControl["Origin Access Control (SigV4)"]
+    end
+
+    subgraph datastore ["Private Origin Storage"]
+        s3Bucket["Private Amazon S3 Bucket: Private — Public Access Blocked."]
+        indexObject["index.html"]
+    end
+
+    subgraph external ["Infrastructure as Code"]
+        terraform["Terraform"]
+    end
+
+    globalUser -->|"HTTPS"| cloudFront
+    cloudFront -->|"Uses"| originAccessControl
+    originAccessControl -->|"Signed origin request through OAC."| s3Bucket
+    s3Bucket -->|"Stores"| indexObject
+
+    terraform -.->|"Provisions"| cloudFront
+    terraform -.->|"Provisions"| s3Bucket

@@ -7,7 +7,7 @@ variable "aws_region" {
 variable "project_name" {
   description = "Lowercase project name used in AWS resource names."
   type        = string
-  default     = "iu-secure-static-website"
+  default     = "iu-cloud-programming-spa"
 
   validation {
     condition     = can(regex("^[a-z0-9-]+$", var.project_name))

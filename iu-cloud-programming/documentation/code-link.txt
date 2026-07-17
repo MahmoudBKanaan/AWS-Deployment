@@ -1,0 +1,6 @@
+Stable Part 2 code snapshot:
+https://github.com/MahmoudBKanaan/AWS-Deployment/tree/portfolio-part-2-first-draft/iu-cloud-programming
+
+Git tag: portfolio-part-2-first-draft
+
+Access verification status: Pending tutor access and testing from the tutor's account or another authorized account. The repository is private and returns HTTP 404 to anonymous users.
